@@ -36,3 +36,5 @@ https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/forEach
 - Built navigation and scroll to anchor.
 
 - Added active state on scrolling.
+
+- Added back-to-top button
