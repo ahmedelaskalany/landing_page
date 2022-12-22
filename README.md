@@ -1,6 +1,7 @@
 # Landing Page Project
 
 ## Preview
+
 ![image](https://user-images.githubusercontent.com/93716561/208993106-eec11690-2f97-40c9-9426-1bca1beb6f4f.png)
 
 ## Table of Contents
@@ -42,3 +43,5 @@ https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/forEach
 - Added active state on scrolling.
 
 - Added back-to-top button
+
+- Added highlight on navigation bar links to sections.
