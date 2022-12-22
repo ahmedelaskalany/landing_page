@@ -46,7 +46,7 @@ const btn = document.getElementById("button");
 function buildNav() {
   // forEach to loop for each section
   sections.forEach((sec) => {
-    // Creating new elements - li and a
+    // Creating new element - a
     const itemList = document.createElement("li");
     const itemLink = document.createElement("a");
     // Adding class and attributes to a
@@ -57,6 +57,7 @@ function buildNav() {
     // Scroll to anchor ID using scrollIntoView event
     itemLink.addEventListener("click", (e) => {
       e.preventDefault();
+      itemLink.classList.add("active");
       sec.scrollIntoView({
         behavior: "smooth",
       });
@@ -70,12 +71,21 @@ function buildNav() {
 
 // Add class 'active' to section when near top of viewport
 function active() {
+  const links = document.querySelectorAll("a.menu__link");
   sections.forEach((section) => {
     if (
       // Using getBoundingClientRect() to toggle active class based on scrolling into and out of each section.
       section.getBoundingClientRect().top > -150 &&
       section.getBoundingClientRect().top < 400
     ) {
+      links.forEach((link) => {
+        link.classList.remove("active");
+        if (link.textContent === section.getAttribute("data-nav")) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
       section.classList.add("your-active-class");
     } else {
       section.classList.remove("your-active-class");
