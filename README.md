@@ -29,6 +29,7 @@ For specific, detailed instructions, look at the project instructions in the Uda
 
 https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
 https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/forEach
+https://www.w3schools.com/howto/howto_js_dropdown.asp
 
 ## Details
 
