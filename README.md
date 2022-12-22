@@ -42,6 +42,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/forEach
 
 - Added active state on scrolling.
 
-- Added back-to-top button
+- Added back-to-top button.
 
 - Added highlight on navigation bar links to sections.
+
+- Add svg files to the project.

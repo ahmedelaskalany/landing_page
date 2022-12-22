@@ -63,7 +63,58 @@ section {
 
 /* ---- Module Rules ---- */
 
+/* Back to top button */
+#button {
+        width: 5%;
+        position: fixed;
+        right:20px;
+        bottom: 20px;
+        border: none;
+        z-index: 1;
+        border-radius: 50px;
+        padding: 10px;
+        margin: 10px;
+}
+#button img {
+    color: #000;
+    width: 50%;
+}
+
 /* Navigation Styles*/
+
+/* Responsive mobile screens with dropdown menu */
+@media (max-width: 425px) {
+    .navbar__menu {
+        width: 100%;
+        margin: auto 0 auto auto;
+    }
+    .navbar__menu img {
+        display: block !important;
+        width: 8%;
+        padding: 10px;
+    }  
+    .navbar__menu ul {
+        display: none;
+    }
+    .navbar__menu ul.show {
+        display: block;
+        text-align: center;
+    }
+    .navbar__menu li {
+        display: block !important;
+        width: 100%;
+    }
+    #button {
+        width: 15%;
+        margin: 0;
+    }
+}
+
+
+.navbar__menu img {
+    display: none;
+}
+
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
