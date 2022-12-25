@@ -49,4 +49,4 @@ https://www.w3schools.com/howto/howto_js_dropdown.asp
 
 - Added highlight on navigation bar links to sections.
 
-- Add svg files to the project.
+- Updated icons from svg files to Google Icons.

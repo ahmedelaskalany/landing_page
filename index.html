@@ -10,17 +10,24 @@
       href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
       rel="stylesheet"
     />
+    <!-- Load icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Load Styles -->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Create back to top button -->
-    <button id="button"><img src="/svg/angles-up-solid.svg" alt="" /></button>
+    <button id="button">
+      <span class="material-icons"> keyboard_double_arrow_up </span>
+    </button>
     <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
     <header class="page__header">
       <nav class="navbar__menu">
-        <img src="/svg/bars-solid.svg" id="dropdown-menu" />
+        <span class="material-icons" id="dropdown-menu"> menu </span>
         <!-- Navigation starts as empty UL that will be populated with JS -->
         <ul id="navbar__list"></ul>
       </nav>

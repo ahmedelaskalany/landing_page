@@ -58,6 +58,9 @@ function buildNav() {
     // Scroll to anchor ID using scrollIntoView event
     itemLink.addEventListener('click', (e) => {
       e.preventDefault();
+      // itemLink.addEventListener('click', (e) => {
+      //   e.classList.remove('active');
+      // });
       itemLink.classList.add('active');
       sec.scrollIntoView({
         behavior: 'smooth',
@@ -97,7 +100,7 @@ function active() {
 // Add back to top button
 
 window.onscroll = function () {
-  if (window.scrollY > 200) {
+  if (window.scrollY > 400) {
     btn.style.display = 'block';
   } else {
     btn.style.display = 'none';
